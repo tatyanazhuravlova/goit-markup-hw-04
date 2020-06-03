@@ -26,10 +26,11 @@ html {
   --text-color: #757575;
   --text-autor: rgba(255, 255, 255, 0.4);
   --text-footer: rgba(255, 255, 255, 0.6);
-  --footter-background-color: rgba(47, 48, 58, 0.8);
+  --footter-background-color: #2f303a;
   --portfolio-ul-background: #f5f4fa;
   --text-social: #afb1b8;
   --socials-footer: rgba(255, 255, 255, 0.1);
+  --portfolio-filter-text: #f5f4fa;
 }
 .page {
   color: var(--primary-text-color);
@@ -457,11 +458,13 @@ img {
   padding-right: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
+  fill: var(--text-social);
 }
 
 .socials:hover,
 .socials:focus {
   background-color: var(--color-link);
+  fill: var(--hero-text);
 }
 
 .social-nav .socials > .link-social:hover,
@@ -763,7 +766,11 @@ address {
 }
 
 /*PORTFOLIO CSS*/
+/* header */
 
+.border {
+  border: 1px solid#ECECEC;
+}
 /*nav*/
 .filter-nav {
   padding-top: 100px;
@@ -780,6 +787,29 @@ address {
   color: var(--primary-text-color);
   background-color: var(--portfolio-ul-background);
 }
+.filter-text {
+  padding: 0;
+  border: none;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: var(--portfolio-filter-text);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-text:last-child {
+  margin-right: 0px;
+}
+
 .filter-text:hover,
 .filter-text:focus {
   color: var(--hero-text);
@@ -820,6 +850,7 @@ address {
   margin-right: 30px;
   background: #ffffff;
   text-decoration: none;
+  border: 1px solid#ECECEC;
 }
 .card-content:nth-child(3n) {
   margin-right: 0;
