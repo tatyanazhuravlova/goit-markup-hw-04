@@ -850,7 +850,6 @@ address {
   margin-right: 30px;
   background: #ffffff;
   text-decoration: none;
-  border: 1px solid#ECECEC;
 }
 .card-content:nth-child(3n) {
   margin-right: 0;
